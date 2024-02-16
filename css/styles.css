@@ -23,6 +23,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     flex: 1;
     /* Займати рівну ширину на всіх екранах */
+    transition: all 0.3s ease;
+    /* Плавні зміни стилів */
 }
 
 .timer-item span {
@@ -39,4 +41,13 @@
 
 .timer-item span:last-child {
     font-size: 0.8em;
+}
+
+.timer-item:hover {
+    transform: scale(1.05);
+    /* Збільшення розміру при наведенні */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Тінь стає більш виразною */
+    background-color: #2980b9;
+    /* Колір тла при наведенні */
 }
