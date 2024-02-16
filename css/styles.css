@@ -1,0 +1,42 @@
+#title {
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Дозволяє елементам переноситися на новий рядок */
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timer-item {
+    text-align: center;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    /* Зелений колір для тла таймера */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    /* Займати рівну ширину на всіх екранах */
+}
+
+.timer-item span {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    /* Для розділення числа і одиниць часу на окремі рядки */
+}
+
+.timer-item span:first-child {
+    margin-bottom: 5px;
+    /* Проміжок між числом і одиницями часу */
+}
+
+.timer-item span:last-child {
+    font-size: 0.8em;
+}
