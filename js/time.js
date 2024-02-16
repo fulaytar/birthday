@@ -54,18 +54,18 @@ function swapName() {
   
   if (name.textContent === "Івана") {
     name.textContent = "Мар'янки";
-    name.style.color = "#8A2BE2";
+    name.style.color = "purple";
     deadline = '2024-11-28';
     timeBlocks.map(block => {
       block.classList.remove('timer-item');
-      block.classList.add('violet')
+      block.classList.add('purple')
     })
   } else {
     name.textContent = "Івана";
     name.style.color = "#2980b9";
     deadline = '2024-04-24';
     timeBlocks.map(block => {
-      block.classList.remove('violet');
+      block.classList.remove('purple');
       block.classList.add('timer-item')
     })
   }

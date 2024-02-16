@@ -55,8 +55,8 @@
     background-color: #37b929;
     /* Колір тла при наведенні */
 }
-.violet{
-    background-color: #8A2BE2;
+.purple{
+    background-color: purple;
     text-align: center;
     margin: 5px;
     padding: 10px 15px;
@@ -67,22 +67,22 @@
     /* Займати рівну ширину на всіх екранах */
     transition: all 0.3s ease;
 }
-.violet span {
+.purple span {
     font-size: 1.5em;
     font-weight: bold;
     display: block;
     /* Для розділення числа і одиниць часу на окремі рядки */
 }
 
-.violet span:first-child {
+.purple span:first-child {
     margin-bottom: 5px;
     /* Проміжок між числом і одиницями часу */
 }
 
-.violet span:last-child {
+.purple span:last-child {
     font-size: 0.8em;
 }
-.violet:hover{
+.purple:hover{
     transform: scale(1.05);
     /* Збільшення розміру при наведенні */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
