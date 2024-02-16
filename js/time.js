@@ -25,13 +25,22 @@ function setClock(selector, endTime) {
     
     function updateClock() {
         const t = getTimeRemainding(endTime);
-        days.textContent = t.days;
-        hours.textContent = t.hours;
-        minutes.textContent = t.minutes;
-        seconds.textContent = t.seconds;
+        days.textContent = getZero(t.days);
+        hours.textContent = getZero(t.hours);
+        minutes.textContent = getZero(t.minutes);
+        seconds.textContent = getZero(t.seconds);
         if (t.total <= 0) {
             clearInterval(timeInterval)
         }
     }
 }
 setClock('.timer', deadline);
+
+//додаю нулик від 0 до 9
+function getZero(num) {
+  if (num >= 0 && num < 10) {
+    return `0${num}`
+  } else {
+    return num;
+  }
+}
