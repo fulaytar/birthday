@@ -44,3 +44,29 @@ function getZero(num) {
     return num;
   }
 }
+
+//відловлюю їм'я
+const name = document.querySelector('#name');
+//колір блоків
+const timeBlocks = [...document.querySelectorAll('.timer-item')];
+name.addEventListener('click', swapName);
+function swapName() {
+  
+  if (name.textContent === "Івана") {
+    name.textContent = "Мар'янки";
+    name.style.color = "#8A2BE2";
+    deadline = '2024-11-28';
+    timeBlocks.map(block => {
+      block.classList.remove('timer-item');
+      block.classList.add('violet')
+    })
+  } else {
+    name.textContent = "Івана";
+    name.style.color = "#2980b9";
+    deadline = '2024-04-24';
+    timeBlocks.map(block => {
+      block.classList.remove('violet');
+      block.classList.add('timer-item')
+    })
+  }
+}
